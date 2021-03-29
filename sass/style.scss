@@ -1,0 +1,102 @@
+@import "variable";
+@import "include";
+
+.container{
+    @extend %container;
+}
+
+header {
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-height: 60vh;
+        width: 520px;   
+        border: 0;
+        border-radius: 10px;
+        box-shadow: $boxShadowLogin ; 
+
+        h1 {
+            text-align: center;
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 2.5rem;
+            padding-top: 1rem;
+            letter-spacing: 2px;
+        }
+        .login-info {
+            padding-top: 1rem;
+            .pass{
+                position: relative;
+                img {
+                    width: 20px;
+                    position: absolute;
+                    top: 10px;
+                    right: 70px;
+                    cursor: pointer;
+                }
+            } 
+        }
+        .login-info input:not(input[type = "submit" ]){
+            margin: 1rem auto 2rem;
+            display: block;
+            border: 1px solid #000;
+            border-radius: 20px;
+            padding: 10px 15px;
+            width: 80%;
+            
+        }
+        input[type = "submit" ] {
+            margin: 1rem auto;
+            display: block;
+            border: 0;
+            border-radius: 30px;
+            padding: 10px 15px;
+            width: 30%;
+            background: $backgroundBtnLogin;
+            color: $colorBtnLogin;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 4rem;
+        }
+    }
+
+    @media (max-width: 539px) {
+        .login {
+                width: 320px;
+        }
+        .login-info input:not(input[type = "submit" ]) {
+            width: 100%;
+        }
+        .pass {
+            img {
+                right: 40px !important;
+            }
+        }
+    }
+    @media (max-width: 320px){
+        .login {
+            width: 260px;
+        }
+        .login-info input:not(input[type = "submit" ]) {
+        width: 100%;
+        }
+        input[type = "submit"] {
+        width: 40% !important;
+        margin: auto !important;
+        }
+        .pass {
+        img {
+            right: 40px !important;
+        }
+        }
+
+    }
+
+}
+

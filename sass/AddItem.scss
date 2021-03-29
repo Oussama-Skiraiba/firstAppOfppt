@@ -1,0 +1,113 @@
+@import "variable";
+@import "include";
+.AddItemGlobale {
+  margin: 9rem 19rem 3rem;
+  width: 70%;
+  background: #fff;
+  height: 80vh;
+  h2 {
+    color: #4264d0;
+    padding: 20px 0;
+    margin-left: 40px;
+  }
+  hr {
+    border: 0.1px solid rgba(190, 190, 190, 0.335);
+  }
+  .globale {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .addItems {
+    margin-left: 40px;
+    .additem {
+      margin: 10px 0;
+      span {
+        color: #747b8d;
+        display: block;
+        margin: 5px 0;
+        font-size: 18px;
+      }
+      input {
+        width: 80%;
+        padding: 10px 15px;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  }
+  .uploadPic {
+    margin: 10px 0;
+    span {
+      color: #747b8d;
+      display: block;
+      margin: 5px 0;
+      font-size: 18px;
+    }
+    textarea,
+    .uploadImage {
+      width: 90%;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f9f9f9;
+    }
+    textarea {
+      height: 130px;
+    }
+    .uploadImage {
+      height: 220px;
+      margin: 10px 0;
+      position: relative;
+      cursor: pointer;
+      .img-h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 190px;
+        display: flex;
+        justify-content: space-between;
+        h3 {
+          color: #23b59c;
+        }
+        img {
+          transition: 0.4s ease-in;
+        }
+      }
+      > img {
+        position: absolute;
+        width: 402px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        display: none;
+        border: 2px dashed #0090ff;
+        border-radius: 4px;
+      }
+      .show-img {
+        display: block;
+        z-index: 10;
+        opacity: 1;
+      }
+      &:hover .img-h3 img {
+        transform: translateY(-10px) rotate(180deg);
+      }
+    }
+    .send {
+      background: #0090ff;
+      color: $colorBtnLogin;
+      padding: 10px 15px;
+      float: right;
+      margin-right: 50px;
+      width: 30%;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+}

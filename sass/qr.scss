@@ -1,0 +1,22 @@
+@import "variable";
+@import "include";
+.qrScan {
+    margin: 9rem 19rem 3rem;
+    width: 70%;
+    background: #fff;
+    height: 80vh;
+    h2 {
+        color: #4264d0;
+        padding: 20px 0;
+        margin-left: 40px;
+    }
+    .video {
+        width: 70%;
+        border-radius: 4px;
+        overflow: hidden;
+        margin: auto;
+        #qrV {
+            width: 100%;
+        }
+    }
+}

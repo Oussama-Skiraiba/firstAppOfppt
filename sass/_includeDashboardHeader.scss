@@ -1,0 +1,113 @@
+@import "include";
+@import"variable";
+
+.container{
+    @extend %container;
+}
+header{
+    background: $backgrounDashboard;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .imagesLogin {
+        width: 30%;
+        img{
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+    .nav ,nav{
+        display: flex;
+        align-items: center;
+    }
+    nav{
+        justify-content: space-around;
+        width: 100%;
+        height: 1vh;
+        .border{
+            border: 1px solid #fff;
+            border-width: 0 2px 0 0;
+            width: 0;
+            height: 95px;
+            margin-bottom: .5rem;
+            margin-left: -2rem;
+        }
+        .input{
+            width: 40%;
+            position: relative;
+            margin-right: 30px;
+            input{
+                width: 100%;
+                padding: 10px 15px;
+                border: 0;
+                border-radius: 10px;
+            }
+            .search svg {
+                padding: 0px 15px;
+                margin-top: -5px;
+                cursor: pointer;
+            }
+            .search{
+                position: absolute;
+                right: -1%;
+                z-index: 1;
+                padding: -10px;
+                top: -1%;
+                background: #23B59C;
+                border-radius: 0 10px 10px 0;
+                height: 36px;
+            }
+            .valueSearch{
+                width: 100%;
+                position: absolute;
+                top: 120%;
+                overflow: hidden;
+                border-radius: 6px;
+                span {
+                    display: block;
+                    padding: 10px 15px;
+                    border-bottom: 1px solid $backgrounDashboard;
+                    cursor: pointer;
+                    transition: .3s ease-in;
+                    &:hover{
+                        color: $colorBtnLogin;
+                    }
+                }
+                span:nth-child(odd){
+                    background-color: $backgroundAddItems;
+                    &:hover{
+                        background-color: $backgrounDashboard;
+                    }
+                }
+                span:nth-child(even){
+                    background-color: #e2e2e2;
+                    &:hover{
+                        background-color: $backgrounDashboard;
+                    }
+                }
+            }
+        }
+        .imgaesEmpl {
+            width: 260px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 50px;
+                border: 0;
+                border-radius: 50%;
+            }
+            >span {
+                margin-left: 10px;
+                color: #fff;
+            }
+        }
+        
+        .notification , .messages{
+            width: 10%;
+        }
+    }
+
+}
+
+// End Dahborad

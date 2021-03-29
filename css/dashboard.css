@@ -1,0 +1,265 @@
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #F4F4F8;
+}
+
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+
+header {
+  background: #4264D0;
+  height: 15vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+header .imagesLogin {
+  width: 30%;
+}
+
+header .imagesLogin img {
+  width: 100px;
+  cursor: pointer;
+}
+
+header .nav, header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 1vh;
+}
+
+header nav .border {
+  border: 1px solid #fff;
+  border-width: 0 2px 0 0;
+  width: 0;
+  height: 95px;
+  margin-bottom: .5rem;
+  margin-left: -2rem;
+}
+
+header nav .input {
+  width: 40%;
+  position: relative;
+  margin-right: 30px;
+}
+
+header nav .input input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 10px;
+}
+
+header nav .input .search svg {
+  padding: 0px 15px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+header nav .input .search {
+  position: absolute;
+  right: -1%;
+  z-index: 1;
+  padding: -10px;
+  top: -1%;
+  background: #23B59C;
+  border-radius: 0 10px 10px 0;
+  height: 36px;
+}
+
+header nav .input .valueSearch {
+  width: 100%;
+  position: absolute;
+  top: 120%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+header nav .input .valueSearch span {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #4264D0;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+header nav .input .valueSearch span:hover {
+  color: #F4F4F8;
+}
+
+header nav .input .valueSearch span:nth-child(odd) {
+  background-color: #F4F4F8;
+}
+
+header nav .input .valueSearch span:nth-child(odd):hover {
+  background-color: #4264D0;
+}
+
+header nav .input .valueSearch span:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+header nav .input .valueSearch span:nth-child(even):hover {
+  background-color: #4264D0;
+}
+
+header nav .imgaesEmpl {
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .imgaesEmpl img {
+  width: 50px;
+  border: 0;
+  border-radius: 50%;
+}
+
+header nav .imgaesEmpl > span {
+  margin-left: 10px;
+  color: #fff;
+}
+
+header nav .notification, header nav .messages {
+  width: 10%;
+}
+
+.menu {
+  position: fixed;
+  background: #4264D0;
+  width: 15%;
+  height: 100vh;
+  top: 13%;
+  padding: 10px 0;
+}
+
+.menu .dashbord,
+.menu .containte,
+.menu .sittinges,
+.menu .qr {
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.menu .dashbord i svg,
+.menu .dashbord img,
+.menu .containte i svg,
+.menu .containte img,
+.menu .sittinges i svg,
+.menu .sittinges img,
+.menu .qr i svg,
+.menu .qr img {
+  display: inline-block;
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+.menu .dashbord span,
+.menu .containte span,
+.menu .sittinges span,
+.menu .qr span {
+  display: inline-block;
+  font-size: 15px;
+  color: #F4F4F8;
+}
+
+.menu .qr span a,
+.menu .dashbord span a,
+.menu .sittinges span a {
+  color: #fff;
+}
+
+.menu .containte i svg {
+  width: 12px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.menu .containte .containte-items {
+  display: none;
+  padding: 6px 15px;
+}
+
+.menu .containte .containte-items ul {
+  padding: 0;
+}
+
+.menu .containte .containte-items ul li {
+  margin-left: 20px;
+  color: #F4F4F8;
+  list-style-type: circle;
+}
+
+.menu .containte .containte-items ul li a {
+  color: #fff;
+}
+
+.menu .containte .show-containte-items {
+  display: block !important;
+}
+
+.menu .loginOut {
+  position: absolute;
+  bottom: 20%;
+}
+
+.menu .loginOut i svg {
+  width: 20px;
+  position: absolute;
+  left: 1%;
+  cursor: pointer;
+}
+
+.menu .loginOut button {
+  display: inline-block;
+  background: #23b59c;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+.menu .loginOut button a {
+  color: #F4F4F8;
+}
+
+.chart {
+  width: 900px;
+  max-height: 900px;
+  margin: 9rem 19rem 3rem;
+}
+/*# sourceMappingURL=dashboard.css.map */

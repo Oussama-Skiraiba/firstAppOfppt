@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #F4F4F8;
+}
+
+.AddItemGlobale {
+  margin: 9rem 19rem 3rem;
+  width: 70%;
+  background: #fff;
+  height: 80vh;
+}
+
+.AddItemGlobale h2 {
+  color: #4264d0;
+  padding: 20px 0;
+  margin-left: 40px;
+}
+
+.AddItemGlobale hr {
+  border: 0.1px solid rgba(190, 190, 190, 0.335);
+}
+
+.AddItemGlobale .globale {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.AddItemGlobale .addItems {
+  margin-left: 40px;
+}
+
+.AddItemGlobale .addItems .additem {
+  margin: 10px 0;
+}
+
+.AddItemGlobale .addItems .additem span {
+  color: #747b8d;
+  display: block;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.AddItemGlobale .addItems .additem input {
+  width: 80%;
+  padding: 10px 15px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.AddItemGlobale .uploadPic {
+  margin: 10px 0;
+}
+
+.AddItemGlobale .uploadPic span {
+  color: #747b8d;
+  display: block;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.AddItemGlobale .uploadPic textarea,
+.AddItemGlobale .uploadPic .uploadImage {
+  width: 90%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.AddItemGlobale .uploadPic textarea {
+  height: 130px;
+}
+
+.AddItemGlobale .uploadPic .uploadImage {
+  height: 220px;
+  margin: 10px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.AddItemGlobale .uploadPic .uploadImage .img-h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.AddItemGlobale .uploadPic .uploadImage .img-h3 h3 {
+  color: #23b59c;
+}
+
+.AddItemGlobale .uploadPic .uploadImage .img-h3 img {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.AddItemGlobale .uploadPic .uploadImage > img {
+  position: absolute;
+  width: 402px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  display: none;
+  border: 2px dashed #0090ff;
+  border-radius: 4px;
+}
+
+.AddItemGlobale .uploadPic .uploadImage .show-img {
+  display: block;
+  z-index: 10;
+  opacity: 1;
+}
+
+.AddItemGlobale .uploadPic .uploadImage:hover .img-h3 img {
+  -webkit-transform: translateY(-10px) rotate(180deg);
+          transform: translateY(-10px) rotate(180deg);
+}
+
+.AddItemGlobale .uploadPic .send {
+  background: #0090ff;
+  color: #F4F4F8;
+  padding: 10px 15px;
+  float: right;
+  margin-right: 50px;
+  width: 30%;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=update.css.map */

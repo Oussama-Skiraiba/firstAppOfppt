@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #F4F4F8;
+}
+
+.qrScan {
+  margin: 9rem 19rem 3rem;
+  width: 70%;
+  background: #fff;
+  height: 80vh;
+}
+
+.qrScan h2 {
+  color: #4264d0;
+  padding: 20px 0;
+  margin-left: 40px;
+}
+
+.qrScan .video {
+  width: 70%;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.qrScan .video #qrV {
+  width: 100%;
+}
+/*# sourceMappingURL=qr.css.map */

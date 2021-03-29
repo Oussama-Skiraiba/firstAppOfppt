@@ -1,0 +1,67 @@
+.sittinges-uploade {
+  margin: 9rem 19rem 3rem;
+  width: 70%;
+  background: #fff;
+  height: 80vh;
+  h2 {
+    color: #4264d0;
+    padding: 20px 0;
+    margin-left: 40px;
+  }
+  hr {
+    border: 0.1px solid rgba(190, 190, 190, 0.335);
+  }
+  .uploade {
+    cursor: pointer;
+    width: 422px;
+    height: 220px;
+    margin: 30px auto 0;
+    background: #f9f9f9;
+    border: 1px solid #747b8d;
+    border-radius: 4px;
+    position: relative;
+    h3 {
+      text-align: center;
+      display: block;
+      padding-top: 80px;
+      color: #23b59c;
+    }
+    input {
+      visibility: hidden;
+    }
+    > img {
+      position: absolute;
+      width: 402px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      border: 2px dashed #0090ff;
+      border-radius: 4px;
+    }
+  }
+  .name {
+    width: 50%;
+    margin: 20px auto 0;
+    text-align: center;
+    input {
+      padding: 5px 15px;
+      border: 1px solid #747b8d;
+      border-radius: 4px;
+      width: 80%;
+    }
+    .send {
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      margin: 20px auto 0;
+      width: 30%;
+      padding: 5px 15px;
+      border: 0;
+      border-radius: 4px;
+      color: #fff;
+      background: #0090ff;
+    }
+  }
+}

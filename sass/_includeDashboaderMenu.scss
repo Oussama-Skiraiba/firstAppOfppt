@@ -1,0 +1,83 @@
+.menu {
+  position: fixed;
+  background: $backgrounDashboard;
+  width: 15%;
+  height: 100vh;
+  top: 13%;
+  padding: 10px 0;
+
+  .dashbord,
+  .containte,
+  .sittinges,
+  .qr {
+    cursor: pointer;
+    padding: 10px 0;
+    i svg,
+    img {
+      display: inline-block;
+      width: 20px;
+      margin-bottom: -5px;
+      // cursor: pointer;
+    }
+    span {
+      display: inline-block;
+      font-size: 15px;
+      color: $colorBtnLogin;
+    }
+  }
+  .qr span a,
+  .dashbord span a,
+  .sittinges span a {
+    color: #fff;
+  }
+  .containte {
+    i svg {
+      width: 12px;
+      cursor: pointer;
+      padding-top: 5px;
+    }
+    .containte-items {
+      display: none;
+      padding: 6px 15px;
+      ul {
+        padding: 0;
+        li {
+          margin-left: 20px;
+          color: $colorBtnLogin;
+          list-style-type: circle;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .show-containte-items {
+      display: block !important;
+    }
+  }
+  .loginOut {
+    position: absolute;
+    bottom: 20%;
+    i svg {
+      width: 20px;
+      position: absolute;
+      left: 1%;
+      cursor: pointer;
+    }
+    button {
+      display: inline-block;
+      background: #23b59c;
+      padding: 10px 25px;
+      border: 0;
+      border-radius: 10px;
+      // margin-top: 1rem;
+      margin-top: 0.3rem;
+      
+      cursor: pointer;
+      a {
+        color: $colorBtnLogin;
+      }
+    }
+    
+  }
+}
