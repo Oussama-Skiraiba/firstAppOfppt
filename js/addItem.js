@@ -43,12 +43,12 @@ send.addEventListener('click', () => {
             .then(response => response.json())
             .then(data => {
                 if (data.message == "yes") {
-                    messageError("yes your cant add item", "success");
+                    messageError("Product Has Been Added", "success");
                     clear()
                     return;
                 }
                 if (data.message == "no") {
-                    messageError("your cant not add item", "error");
+                    messageError("You Cannot Add Product", "error");
                     return;
                 }
             });
@@ -65,5 +65,6 @@ uploadImage.addEventListener("change", (e) => {
     show.style.display = 'block';
     show.style.opacity = 1;
 });
+
 
 

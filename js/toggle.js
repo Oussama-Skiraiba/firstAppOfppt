@@ -12,3 +12,13 @@ let messageError = (value, icon) => {
 containte.addEventListener("click",()=>{
     containte_items.classList.toggle("show-containte-items");
 });
+
+
+let burger = document.querySelector("#hommeBorger");
+let burgerItem = document.querySelector("#burger-open");
+burger.addEventListener('click',()=>{
+    // burgerItem.style.display = 'block'
+    // hommeBorger-left
+    burgerItem.classList.toggle("display");
+    burger.classList.toggle("hommeBorger-left");
+})

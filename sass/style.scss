@@ -19,7 +19,8 @@ header {
         width: 520px;   
         border: 0;
         border-radius: 10px;
-        box-shadow: $boxShadowLogin ; 
+        box-shadow:  $boxShadowLogin ; 
+        z-index: 10;
 
         h1 {
             text-align: center;

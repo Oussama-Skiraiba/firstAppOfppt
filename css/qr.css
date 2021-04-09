@@ -36,4 +36,11 @@ body {
 .qrScan .video #qrV {
   width: 100%;
 }
+
+@media (max-width: 968px) {
+  .qrScan {
+    margin: 9rem 5rem 3rem;
+    width: 88%;
+  }
+}
 /*# sourceMappingURL=qr.css.map */

@@ -153,4 +153,11 @@ body {
   font-size: 20px;
   margin-top: 10px;
 }
+
+@media (max-width: 968px) {
+  .AddItemGlobale {
+    margin: 9rem 5rem 3rem;
+    width: 88%;
+  }
+}
 /*# sourceMappingURL=update.css.map */

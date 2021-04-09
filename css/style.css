@@ -41,6 +41,7 @@ header .login {
   border-radius: 10px;
   -webkit-box-shadow: 0 55px 50px -17px rgba(0, 0, 0, 0.22);
           box-shadow: 0 55px 50px -17px rgba(0, 0, 0, 0.22);
+  z-index: 10;
 }
 
 header .login h1 {

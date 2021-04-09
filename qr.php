@@ -1,9 +1,4 @@
-<?php
-session_start();
-if (empty($_SESSION["name"])) {
-    header('Location:http://localhost/proge/test.php');
-}
-?>
+<?php include_once "inc/session.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +8,7 @@ if (empty($_SESSION["name"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/qr.css">
+    <link rel="icon" href="icon/caduceus-symbol.png" sizes="32*32">
     <title>Document</title>
 </head>
 

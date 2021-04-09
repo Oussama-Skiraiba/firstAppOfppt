@@ -1,9 +1,4 @@
-<?php
-session_start();
-if (empty($_SESSION["name"])) {
-    header('Location:http://localhost/proge/test.php');
-}
-?>
+<?php include_once "inc/session.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +7,7 @@ if (empty($_SESSION["name"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="icon" href="icon/caduceus-symbol.png" sizes="32*32">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <title>Document</title>
 
@@ -56,8 +52,7 @@ function chartit(data) {
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    'rgba(153, 102, 255, 0.2)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',

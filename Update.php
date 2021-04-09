@@ -14,14 +14,17 @@ if (empty($_SESSION["name"])) {
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/AddItem.css">
     <link rel="stylesheet" href="css/update.css">
+    <link rel="icon" href="icon/caduceus-symbol.png" sizes="32*32">
     <!--  -->
     <title>Document</title>
 </head>
 
 <body>
 
-    <?php include "header.php"; ?>
-
+<?php
+    include_once "inc/session.php";
+    include "header.php"; 
+ ?>
     <div class="AddItemGlobale">
 
         <h2>Update Item</h2>

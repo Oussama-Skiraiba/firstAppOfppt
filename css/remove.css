@@ -47,4 +47,11 @@
   color: #000000e3;
   background: #f3e5e5;
 }
+
+@media (max-width: 968px) {
+  .remove {
+    margin: 9rem 5rem 3rem;
+    width: 88%;
+  }
+}
 /*# sourceMappingURL=remove.css.map */

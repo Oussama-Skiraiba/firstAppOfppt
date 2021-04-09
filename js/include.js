@@ -12,6 +12,9 @@ let valueSearch = document.querySelector("#valueSearch");
 let input = document.querySelectorAll('input');
 let show = document.querySelector("#showImg");
 let arr = [];
+// query
+
+
 
 img.addEventListener('click', () => {
     // open  file for uploage imag

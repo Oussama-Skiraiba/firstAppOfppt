@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/AddItem.css">
+    <link rel="icon" href="icon/caduceus-symbol.png" sizes="32*32">
     <title>Document</title>
 </head>
 

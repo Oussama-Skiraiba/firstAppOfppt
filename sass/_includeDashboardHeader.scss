@@ -111,3 +111,32 @@ header{
 }
 
 // End Dahborad
+
+// medai ke
+
+@media (max-width: 968px){
+    header {
+        height: 13vh;
+        .nav {
+            margin-top: -15px;
+        }
+        .input {
+            margin-left: -100px;
+            // left: -15%;
+            // top: -15px;
+        }
+        // .border {
+        //     left: -15%;
+        // }
+        // .nav {
+        //     display: flex;
+            
+        //     .input{
+        //         justify-content: space-evenly;
+        //     }
+        // }
+        .imgaesEmpl {
+            margin-right: -75px;
+        }
+    }
+}
